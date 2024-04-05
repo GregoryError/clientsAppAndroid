@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mob.mobapp.views.MainScreenActivity">
+
+    <item
+        android:id="@+id/nav_share"
+        android:title="@string/menuLabelShare" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_map"-->
+<!--        android:title="На карту" />-->
+
+    <item
+        android:id="@+id/nav_multi"
+        android:checkable="false"
+        android:title="@string/navMenuMultiAcc" />
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:title="@string/feedbackLabel" />
+
+    <item
+        android:id="@+id/nav_color_mode"
+        android:title="@string/menuLabelDarkSide" />
+
+    <item
+        android:id="@+id/nav_our_site"
+        android:title="@string/menuLabelSite" />
+
+    <item
+        android:id="@+id/nav_developer"
+        android:title="@string/menuLabelDev" />
+
+    <item
+        android:id="@+id/nav_policy"
+        android:title="@string/menuLabelPolicy" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/menuLabelExit" />
+
+</menu>

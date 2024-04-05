@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AddExtraInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_black"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextAppearance="@style/Widget.AppCompat.Toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:src="@drawable/call_svg" />
+
+        <TextView
+            android:id="@+id/textViewToolBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/issueDiagLabel"
+            android:fontFamily="@font/montserratregular"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:tint="@color/main_light"
+            android:layout_marginEnd="20dp"
+            android:background="@color/trans"
+            android:src="@drawable/back_icon" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageViewAddExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/add_extra_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/editTextExtraInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:ems="14"
+        android:gravity="start|top"
+        android:hint="@string/extraInfoRequireLabel"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewAddExtra"
+        />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextExtraInfo"
+        android:layout_alignEnd="@+id/editTextExtraInfo"
+        android:layout_marginTop="12dp"
+        android:text="@string/nextBtnLabel"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextExtraInfo"
+        app:layout_constraintEnd_toEndOf="@id/editTextExtraInfo"
+        app:layout_constraintStart_toStartOf="@id/editTextExtraInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
